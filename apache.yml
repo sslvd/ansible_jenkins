@@ -1,8 +1,8 @@
 ---
-- name: httpd is there
-    hosts: webservers
-    tasks:
-      - name: install packages
-        yum:
-         name: httpd
-         state: latest
+- hosts: webservers
+  become: True
+  tasks:
+   - name: install packages
+     yum:
+      name: httpd
+      state: latest
