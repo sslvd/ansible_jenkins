@@ -2,7 +2,7 @@
 - hosts: webservers
   become: True
   tasks:
-   -name: Remove directory
-    file:
-     path: /home/ec2-user/mahi/hi.txt
-     state: absent
+   - name: Remove directory
+     file:
+      path: /home/ec2-user/mahi/hi.txt
+      state: absent
