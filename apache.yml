@@ -1,8 +1,8 @@
 ---
-   -name:httpd is there
-    hosts:jenkins_practice
+- name: httpd is there
+    hosts: webservers
     tasks:
-      -name:install packages
-       yum:
-         name:httpd
-         state:latest
+      - name: install packages
+        yum:
+         name: httpd
+         state: latest
